@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onRequestPermissionResult(int requestCode, String[] permissions, int[] grantResults){
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
         switch (requestCode){
             case 1:
                 if(grantResults.length > 0){
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     requestLocation();
                 }else{Toast.makeText(this, "发生未知错误", Toast.LENGTH_SHORT).show();
-                finish();
+                    finish();
                 }
                 break;
             default:
@@ -259,4 +259,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-

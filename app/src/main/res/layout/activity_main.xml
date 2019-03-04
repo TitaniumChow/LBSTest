@@ -9,8 +9,10 @@
 
     <TextureView
         android:id="@+id/texture_view"
-        android:layout_width="1080px"
-        android:layout_height="1920px"/>
+        android:layout_width="1920px"
+        android:layout_height="1080px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/position_text_view"
